@@ -1,0 +1,42 @@
+# render.yaml — Auto-deploys backend to Render
+# Docs: https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: nova-ai-backend
+    runtime: node
+    region: singapore          # closest to India
+    plan: free                 # free tier
+    rootDir: backend           # only deploy the backend folder
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /api/health
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+      - key: PORT
+        value: 10000            # Render uses 10000 by default
+
+      # ⬇ Set these in Render dashboard (never commit real values)
+      - key: MONGODB_URI
+        sync: false             # fill in Render dashboard
+
+      - key: JWT_SECRET
+        sync: false
+
+      - key: JWT_EXPIRES_IN
+        value: 7d
+
+      - key: AI_PROVIDER
+        value: groq
+
+      - key: AI_MODEL
+        value: llama-3.1-8b-instant
+
+      - key: GROQ_API_KEY
+        sync: false             # fill in Render dashboard
+
+      - key: FRONTEND_URL
+        sync: false             # e.g. https://nova-ai.vercel.app
