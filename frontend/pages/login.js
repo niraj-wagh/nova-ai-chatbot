@@ -87,6 +87,8 @@ export default function LoginPage() {
           <p style={{ color: 'var(--text-muted)', fontSize: '13px' }}>
             © 2026 Nova AI. Built with Next.js + Grok API.
             © {new Date().getFullYear()} 
+            @ 👤 Created admin: admin@novaai.dev / admin123
+            @ 👤 Created demo user: demo@novaai.dev / demo123
 {new Date().toLocaleDateString('en-US', {
   weekday: 'long',
   year: 'numeric',
