@@ -85,10 +85,16 @@ export default function LoginPage() {
           </div>
 
           <p style={{ color: 'var(--text-muted)', fontSize: '13px' }}>
-            © 2024 Nova AI. Built with Next.js + Claude API.
+            © 2026 Nova AI. Built with Next.js + Grok API.
           </p>
         </div>
-
+© {new Date().getFullYear()} Nova AI. Built with Next.js + Grok API.
+{new Date().toLocaleDateString('en-US', {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+})}
         {/* Right: form panel */}
         <div className="flex-1 flex items-center justify-center p-6">
           <div className="w-full max-w-md page-enter">
