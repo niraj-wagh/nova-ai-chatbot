@@ -36,6 +36,14 @@ export default function LoginPage() {
     }
   };
 
+  const [currentDate, setCurrentDate] = useState('');
+
+useEffect(() => {
+  setCurrentDate(new Date().toLocaleDateString('en-US', {
+    weekday: 'long', year: 'numeric',
+    month: 'long', day: 'numeric'
+  }));
+}, []);
   const handleChange = (e) => setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
 
   return (
