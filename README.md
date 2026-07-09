@@ -296,6 +296,21 @@ npx vercel --prod
 
 ---
 
+<img width="1366" height="637" alt="1" src="https://github.com/user-attachments/assets/47f00c8b-a2f0-4d6c-8019-9ce67cf12f75" />
+
+<img width="1366" height="639" alt="2" src="https://github.com/user-attachments/assets/b0e22a1b-6225-43fa-9ff0-60bca197bbfc" />
+
+<img width="1363" height="638" alt="3" src="https://github.com/user-attachments/assets/b4e4cdc6-b0d7-4c62-a625-368d9235731e" />
+
+<img width="1361" height="634" alt=",4" src="https://github.com/user-attachments/assets/4f284381-c539-4de0-a5d0-1f78f3fc855d" />
+
+<img width="1360" height="627" alt=",5" src="https://github.com/user-attachments/assets/86f425af-ad89-4ad2-8066-13933b07a20c" />
+
+<img width="1358" height="556" alt=",6" src="https://github.com/user-attachments/assets/ded04a09-a479-45db-86a9-6597cf3baef6" />
+
+
+
+
 ## 📄 License
 
 MIT License — free to use, modify, and distribute.
